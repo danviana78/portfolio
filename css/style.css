@@ -1,4 +1,12 @@
-body {
-	margin: 0;
-	font-family: sans-serif;
+html, body {
+	height: 100%;
+	overflow-x: hidden;
 }
+
+body {
+	background: url(../img/bg.png) right bottom no-repeat;
+	background-position: cover;
+	font-family: 'Roboto Mono', monospace;
+}
+
+/*font-family: 'Roboto', sans-serif;*/

@@ -89,7 +89,19 @@ nav.navbar-transparente {
 	color: #bb00ff;
 }
 
+a#linkedin {
+	color: #bb00ff;
+}
+
+a:hover#linkedin {
+	color: #8700b8;
+}
+
 /*STYLE-------------------------------*/
+
+#banner {
+	overflow-y: hidden;
+}
 
 #bars-1 {
 	height: 35px;
@@ -105,6 +117,13 @@ nav.navbar-transparente {
 	margin-left: 1000px;
 }
 
+#bars-3 {
+	height: 50px;
+	position: relative;
+	margin-left: 250px;
+	margin-bottom: -40px;
+	margin-top: 30px;
+}
 
 /*FORMATAÇÃO TEXTO------------------------------*/
 
@@ -139,11 +158,12 @@ h4 {
 	font-style: italic;
 	text-align: left;
 	color: #292929;
-	background: repeating-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0) 59.9%, #BB00FF 60.1%, #BB00FF 100%);
-	margin-top: 0;
-	margin-bottom: 10px;
+	/*background: repeating-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0) 59.9%, #BB00FF 60.1%, #BB00FF 100%);*/
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255,255,255,0)), color-stop(40%, #c31fff));
+    background: -o-linear-gradient(top, rgba(255,255,255,0) 60%, #c31fff 40%);
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 60%, #c31fff 40%);
 	padding: 0 15px;
-	display: inline-block;
+	display: inline;
 }
 
 p {
@@ -164,6 +184,17 @@ p {
 	text-align: center;	
 }
 
+#content p {
+	margin-top: 10px;
+}
+
+
+footer p {
+	color: white;
+	margin-top: 35px;
+	font-size: 0.8em;
+	line-height: 1.6em;
+}
 
 /*ESTRUTURA---------------------*/
 
@@ -184,6 +215,31 @@ p {
 
 #tosp {
 	margin-top: 150px;
+}
+
+footer {
+	background-color: #292929;
+	padding: 50px 0px 70px 0px;
+}
+
+footer .navbar-nav a {
+	color: white;
+	font-style: italic;
+	font-weight: 400;
+	letter-spacing: 0.3em;
+	margin: 0 0 10px 20px;
+	padding: 0 0 0 10px;
+	transition: color 0.4s, border 0.4s;
+}
+
+footer .navbar-nav a:hover {
+	color: #BB00FF;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+footer ul {
+	list-style: none;
 }
 
 
@@ -236,11 +292,19 @@ p {
 	#lead p {
 		max-width: 70%;
 	}
+
+	#bars-3 {
+		margin-left: 700px;
+	}
 }
 
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1366px) {
 	.container {
 		max-width: 1366px;
+	}
+
+	#bars-3 {
+		margin-left: 1000px;
 	}
 }

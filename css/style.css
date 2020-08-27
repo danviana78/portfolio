@@ -100,7 +100,7 @@ nav.navbar-transparente {
 .btn-viewproject {
 	color: #292929;
 	font-size: 0.8em;
-	margin: 0px;
+	margin-bottom: 20px;
 	padding: 0px;
 	transition: color 0.4s;
 }
@@ -208,6 +208,11 @@ p {
 	margin-top: 10px;
 }
 
+hr {
+	margin-top: 3px;
+	margin-bottom: 8px;
+	background-color: #bb00ff;
+}
 
 footer p {
 	color: white;
@@ -288,6 +293,11 @@ footer ul {
 		margin-top: -65px;
 		margin-bottom: 30px;
 	}
+
+	.margin-project {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
 }
 
 /*// Small devices (landscape phones, 576px and up)*/
@@ -300,6 +310,10 @@ footer ul {
 		font-size: 3em;
 	}
 	
+	.margin-project {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
 }
 
 /*// Medium devices (tablets, 768px and up)*/

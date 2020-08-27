@@ -142,10 +142,25 @@ p {
 	text-align: center;	
 }
 
+.meta-container {
+    margin: 30px 0;
+    width: 90%;
+}
+
+span.meta {
+    font-size: 0.8em;
+    font-style: italic;
+    padding: 0.2em 0.5em;
+    background-color: white;
+    color: #bb00ff;
+    border: 1px solid #292929;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
 hr {
 	margin-top: 3px;
 	margin-bottom: 8px;
-	background-color: #bb00ff;
 }
 
 footer p {
@@ -159,6 +174,10 @@ footer p {
 
 .img-portfolio {
 	margin-top: 70px;
+}
+
+#lead {
+	padding-bottom: 150px;
 }
 
 footer {
@@ -230,6 +249,11 @@ footer ul {
 		margin: 40px 50px 10px 100px;
 	}
 
+	.meta-container {
+	    margin: 30px 0 30px 95px;
+	    width: 50%;
+	}
+
 	.img-vert {
 		display: none;	
 	}
@@ -239,6 +263,11 @@ footer ul {
 @media (min-width: 992px) and (max-width: 1365.9px) {
 	#lead p {
 		margin: 40px 300px 10px 100px;
+	}
+
+	.meta-container {
+	    margin: 30px 0 30px 95px;
+	    width: 50%;
 	}
 
 	#bars-3 {
@@ -258,6 +287,11 @@ footer ul {
 
 	#lead p {
 		margin: 40px 500px 10px 90px;
+	}
+
+	.meta-container {
+	    margin: 30px 0 30px 95px;
+	    width: 50%;
 	}
 
 	#bars-3 {

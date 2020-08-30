@@ -212,7 +212,7 @@ footer ul {
 @media (max-width: 575.9px) {
 	h3 {
 		font-size: 2em;
-		padding: 120px 0 20px 0;
+		margin-top: 75px;
 	}
 	
 	#bars-1 {
@@ -235,6 +235,7 @@ footer ul {
 
 	h3 {
 		font-size: 3em;
+		margin-top: 75px;
 	}
 
 	/*.img-hor {

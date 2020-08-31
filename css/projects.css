@@ -1,22 +1,75 @@
-html, body, #home, #banner {
+html, body {
 	height: 100%;
+	width: 100%;
 	overflow-x: hidden;
+	margin: 0;
+	border: 0;
+	padding: 0;
+
 }
 
 
-
 body {
-	background: white;
 	font-family: 'Roboto Mono', monospace;
 	color: #292929;
+	/*border: 20px solid #bb00ff;*/
+}
+
+.border-left {
+	height: 100%;
+	width: 21px;
+	background-color: #bb00ff;
+	padding: 0;
+	border: 0;
+	z-index: 99;
+	position: fixed;
+	left: -1px;
+	top: 0;
+}
+
+.border-top {
+	height: 21px;
+	width: 100%;
+	background-color: #bb00ff;
+	padding: 0;
+	margin-top: 0;
+	z-index: 99;
+	position: fixed;
+	left: 0;
+	top: -1px;
+}
+
+.border-right {
+	height: 100%;
+	width: 21px;
+	background-color: #bb00ff;
+	padding: 0;
+	border: 0;
+	z-index: 99;
+	position: fixed;
+	right: -1px;
+	top: 0;
+}
+
+.border-bottom {
+	height: 21px;
+	width: 100%;
+	background-color: #bb00ff;
+	padding: 0;
+	margin-top: 0;
+	z-index: 99;
+	position: fixed;
+	left: 0;
+	bottom: -1px;
 }
 
 
 /*NAVBAR-------------------------------*/
 
 nav.navbar-transparente {
-	padding: 12px 0 10px 0;
+	padding: 27px 0 10px 0;
 	background: linear-gradient(to bottom, #ffffff, rgba(255,255,255,0.8));
+	z-index: 98;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -25,9 +78,11 @@ nav.navbar-transparente {
 	font-weight: 600;
 	letter-spacing: 0.3em;
 	margin-left: 30px;
+	padding-top: 10px;
 	padding-bottom: 8px;
+	border-bottom: 1px solid rgba(0,0,0,0);
 	transition: color 0.4s, border 0.4s;
-} 
+}  
 
 .navbar-light .navbar-nav .nav-link:hover {
 	color: #bb00ff;
@@ -173,12 +228,17 @@ footer p {
 /*ESTRUTURA---------------------*/
 
 .img-portfolio {
-	margin-top: 70px;
+	margin-top: 90px;
 }
 
 #lead {
 	padding-bottom: 150px;
 }
+
+#credits {
+	padding-bottom: 150px;
+}
+
 
 footer {
 	background-color: #292929;
@@ -210,6 +270,26 @@ footer ul {
 
 /*// Extra Small devices */
 @media (max-width: 575.9px) {
+	.container {
+		max-width: 90%;
+	}
+	
+	.border-left {
+		width: 11px;
+	}
+
+	.border-top {
+		height: 11px;
+	}
+
+	.border-right {
+		width: 11px;
+	}
+
+	.border-bottom {
+		height: 11px;
+	}
+
 	h3 {
 		font-size: 2em;
 		margin-top: 75px;
@@ -229,6 +309,26 @@ footer ul {
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.9px) {
+	.container {
+		max-width: 90%;
+	}
+	
+	.border-left {
+		width: 11px;
+	}
+
+	.border-top {
+		height: 11px;
+	}
+
+	.border-right {
+		width: 11px;
+	}
+
+	.border-bottom {
+		height: 11px;
+	}
+
 	h1 {
 		font-size: 6em;
 	}

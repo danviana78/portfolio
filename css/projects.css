@@ -63,6 +63,20 @@ body {
 	bottom: -1px;
 }
 
+.arrow-up {
+	color: #bb00ff;
+	/*background-color: rgba(255,255,255,0.1);
+	padding: 5px;
+	border-radius: 500px;*/
+	z-index: 99;
+	position: fixed;
+	right: 40px;
+	bottom: 38px;
+}
+
+.arrow-up:hover {
+	color: #8700b8;
+}
 
 /*NAVBAR-------------------------------*/
 
@@ -290,6 +304,10 @@ footer ul {
 		height: 11px;
 	}
 
+	#arrow {
+		display: none;
+	}
+
 	h3 {
 		font-size: 2em;
 		margin-top: 75px;
@@ -327,6 +345,10 @@ footer ul {
 
 	.border-bottom {
 		height: 11px;
+	}
+
+	#arrow {
+		display: none;
 	}
 
 	h1 {
